@@ -30,6 +30,14 @@ public class StatedContinuation extends Continuation {
         this.importance = importance;
     }
 
+    public static void yield(ContinuationScope scope, Importance importance) {
+        Continuation continuation = getCurrentContinuation(scope);
+        if (continuation instanceof StatedContinuation) {
+            ((StatedContinuation) continuation).setImportance(importance);
+        }
+        yield(scope);
+    }
+
     public enum Importance {
         LOW, MEDIUM, HIGH
     }
