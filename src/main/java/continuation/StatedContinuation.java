@@ -1,3 +1,5 @@
+package continuation;
+
 public class StatedContinuation extends Continuation {
 
     private Importance importance;
@@ -38,7 +40,4 @@ public class StatedContinuation extends Continuation {
         yield(scope);
     }
 
-    public enum Importance {
-        LOW, MEDIUM, HIGH
-    }
 }

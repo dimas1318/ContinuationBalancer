@@ -1,3 +1,7 @@
+package balancer;
+
+import continuation.StatedContinuation;
+
 import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -34,4 +38,20 @@ public class Balancer {
             executeTasks();
         }
     }
+
+//    c4, phase 1, HIGH
+//    c5, phase 1, HIGH
+//    c4, phase 2, HIGH
+//    c5, phase 2, MEDIUM
+//    c6, phase 1, MEDIUM
+//    c6, phase 2, HIGH
+//    c3, phase 1, MEDIUM
+//    c2, phase 1, MEDIUM
+//    c2, phase 2, MEDIUM
+//    c5, phase 3, LOW
+//    c1, phase 1, LOW
+//    c1, phase 2, HIGH
+//    c4, phase 3, LOW
+//    c3, phase 2, LOW
+//    c3, phase 3, HIGH
 }

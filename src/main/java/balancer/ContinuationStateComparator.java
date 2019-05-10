@@ -1,3 +1,7 @@
+package balancer;
+
+import continuation.StatedContinuation;
+
 import java.util.Comparator;
 
 public class ContinuationStateComparator implements Comparator<StatedContinuation> {
